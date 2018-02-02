@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="Assets/stylesheets/font-awesome.min.css">
     <link rel="stylesheet" href="Assets/stylesheets/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="Assets/stylesheets/animate.css">
+   <link rel="stylesheet" href="Assets/stylesheets/aos.css"/>
+    
     <title>Photostat</title>
     <link rel="icon" href="Assets/images/icon.png">
   </head>
@@ -19,7 +20,7 @@
        <header id="header">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6" id="header-left">
+                <div class="col-md-6 col-sm-6" id="header-left">
                    <h1>
                        <div class="wow pulse">
                            <a href="#">
@@ -31,7 +32,7 @@
                         
                    </h1>
                 </div>
-                <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6" id="header-right">
+                <div class="col-md-6 col-sm-6" id="header-right">
                     <nav id="main-nav">
                         <input type="checkbox" value="Menu"/>
                         <button class="menu-btn">
@@ -127,10 +128,10 @@
                         <div class="col-lg-6" id="section1-right">
                             <div class="card">
                               <div class="card-body">
-                               <div class="wow slideInRight">
+                               <div data-aos="slide-right">
                                    <h4 class="card-title">ABOUT ME</h4>
                                </div>
-                                <div class="wow slideInLeft">
+                                <div data-aos="slide-right">
                                     <h6 class="card-subtitle mb-2 text-muted">PROFESSIONAL IN PHOTOGRAPHY</h6>
                                 </div>
                                 <p class="card-text" id="section1-desc"> 
@@ -152,7 +153,7 @@
                    <div class="container">
                        <div class="row">
                          <div class="col-12" id="heading-top">
-                             <div class="wow lightSpeedIn">
+                             <div data-aos="slide-right">
                                  <h1 class="head-white">Gallery</h1>
                              </div>
                          </div>
@@ -226,10 +227,10 @@
                  <div class="container">   
                   <div class="row">
                      <div class="col-12" id="heading-top">
-                         <div class="wow slideInLeft">
+                         <div data-aos="slide-right">
                              <h1 class="head-white">What I Create</h1>
                          </div>
-                          <div class="wow slideInRight">
+                          <div data-aos="slide-right">
                               <p class="lead">For Digital Life</p>
                           </div>
                      </div>
@@ -240,7 +241,7 @@
                               <i class="fa fa-camera" id="icon" aria-hidden="true"></i> 
                            </div>
                             <div class="card-body" id="service_desc">
-                             <div class="wow slideInLeft">
+                             <div data-aos="zoom-in">
                                  <h4 class="card-title">Urban Exploration</h4>
                                   <p class="card-text">Curabitur quis egestas diam. Vivamus ut libero ut metus tempor scelerisque nec ac turpis.tempor scelerisque nec</p>
                              </div>
@@ -252,7 +253,7 @@
                               <i class="fa fa-camera-retro" id="icon" aria-hidden="true"></i>
                            </div>
                             <div class="card-body" id="service_desc">
-                             <div class="wow wobble">
+                             <div data-aos="zoom-in">
                                   <h4 class="card-title">Shoot Amazing Films</h4>
                                   <p class="card-text">Curabitur quis egestas diam. Vivamus ut libero ut metus tempor scelerisque nec ac turpis.tempor scelerisque nec</p>
                              </div>
@@ -264,7 +265,7 @@
                               <i class="fa fa-video-camera" id="icon" aria-hidden="true"></i>
                            </div>
                             <div class="card-body" id="service_desc">
-                             <div class="wow slideInRight">
+                             <div data-aos="zoom-in">
                                   <h4 class="card-title">Best Photographer</h4>
                                   <p class="card-text">Curabitur quis egestas diam. Vivamus ut libero ut metus tempor scelerisque nec ac turpis.tempor scelerisque nec</p>
                              </div>
@@ -278,10 +279,10 @@
                   <div class="container">
                       <div class="row">
                      <div class="col-12" id="heading-top">
-                         <div class="wow slideInLeft">
+                         <div data-aos="slide-right">
                              <h1 class="head-white">STATS</h1>
                          </div>
-                          <div class="wow slideInRight">
+                          <div data-aos="slide-right">
                               <p class="lead">For Digital Life</p>
                           </div>
                      </div>
@@ -322,7 +323,7 @@
                    <div class="container">
                        <div class="row">
                              <div class="col-12" id="heading-top">
-                                 <div class="wow slideInLeft">
+                                 <div data-aos="zoom-out-up">
                                     <h1 class="head-black">CONTACT ME</h1>
                                     <p class="lead">Give Me A Message</p> 
                                  </div> 
@@ -330,7 +331,7 @@
                        </div>
                        <div class="row">
                              <div class="col-12" id="contact-desc">
-                                 <div class="wow slideInRight">
+                                 <div data-aos="zoom-out-up">
                                      <h4>Drop A Line</h4>
                                   <p class="lead">Sign Up For Our News Letters</p>
                                  </div>
@@ -415,11 +416,11 @@
     
     <!-- stats -->
 	<script src="Js/jquery.countup.js"></script>
-	<script src="Js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
 		<script>
             $(document).ready(function(){
-                $('.counter').countUp();
-            })
+			$('.counter').countUp();
+            });
 		</script>
     <!-- //stats -->
     
@@ -434,15 +435,12 @@
         $(".parallax").paroller({ factor: '0.5', type: 'background', direction: 'horizontal' })
     </script>
     <!-- parallax -->
-    
-   <!--  wow -->
-   <script src="Js/wow.min.js"></script>
+
+    <!-- aos animation on scroll -->
+    <script src="Js/aos.js"></script>
     <script>
-        $(document).ready(function(){
-            new WOW().init();
-        })
-    </script>
-    <!-- wow -->
-    
+    AOS.init();
+  </script>
+  <!-- aos animation on scroll -->
   </body>
 </html>

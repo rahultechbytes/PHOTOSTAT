@@ -621,21 +621,28 @@ div#footer-head {
     font-size: 1.2em;
     cursor: pointer;
 }
+div#footer_nav {
+    margin-top: 10px;
+}
 a#fb {
     color: #3b5998;
-    padding: 2px 10px 7px 10px;
+/*    padding: 2px 10px 7px 10px;*/
+    padding: 12px;
 }
 a#twit {
     color: #1da1f2;
-    padding: 2px 10px 7px 10px;
+/*    padding: 2px 10px 7px 10px;*/
+        padding: 12px;
 }
 a#drib {
     color: #ea4c89;
-    padding: 2px 10px 7px 10px;
+    /*padding: 2px 10px 7px 10px;*/
+        padding: 12px;
 }
 a#rss {
     color: #f26522;
-    padding: 2px 10px 7px 10px;
+/*    padding: 2px 10px 7px 10px;*/
+        padding: 12px;
 }
 #footer-desc p {
     color: #fff;
