@@ -231,7 +231,7 @@ p.logo-desc {
         margin-bottom: 0px;
      }
 }
-/*==================width:42===================*/
+/*==================width:425px===================*/
 @media (max-width: 425px){
     #main-nav .menu-btn {
         display: block;
@@ -254,8 +254,8 @@ p.logo-desc {
     opacity: 0;
 }
     #main-nav ul {
-        width: 80%;
-        left: 40px;
+        width: 100%;
+        left: 0px;
         top: 13px;
         text-align: center;
         padding: 0px 0px;
@@ -290,18 +290,61 @@ p.logo-desc {
     margin-bottom: 0px
      }
 }
-@media (max-width: 425px){
+/*------------------------------ 375px-------------------------*/
+@media (max-width: 376px){
+    #main-nav .menu-btn {
+        display: block;
+        pointer-events: none;
+    }
+    #main-nav {
+        margin-left: 0px;
+    }
+    #main-nav .menu-btn, #main-nav input[type="checkbox"] {
+    position: absolute;
+    right: 20px;
+    top: -30px;
+    border: 1px solid white;
+    border-radius: 5px 8px;    
+    }
     #main-nav ul {
-    width: 80%;
-    left: 33px;
-    top: 13px;
-    text-align: center;
-    padding: 0px 0px;
-}
+        width: 100%;
+        left: 0px;
+        top: 13px;
+        text-align: center;
+        padding: 0px 0px;
+    }
     #header-right ul li {
-    padding: 8px 5px;
+        padding: 5px 5px;
+    }
+    #main-nav ul li {
+        display: block;
+        margin: 0px 0px 0px;
+    }
+    #main-nav input[type="checkbox"]:checked ~ ul {
+        /*display: block;*/
+        transform: scale(1,1);
+    }
+    #header-left{
+        
+    }
+    #header-left a 
+     {
+        color: white;
+        font-size: 0.5em;
+        letter-spacing: 3px;
+        font-weight: 600;
+    }
+    p.logo-desc 
+     {
+        letter-spacing: 7px;
+        font-size: 9px;
+        font-weight: 600;
+        margin-left: 4em;
+        margin-bottom: 0px;
+     }
 }
-}
+/*=====================================375px*/
+
 #header-right a:before {
     content: '';
     position: absolute;
